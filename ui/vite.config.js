@@ -8,5 +8,4 @@ export default defineConfig({
     react(),
     tailwindcss(),
   ],
-  base: import.meta.env.VITE_BASE_PATH || "/https://github.com/Aman-dev-228/paynest.git",
 })
