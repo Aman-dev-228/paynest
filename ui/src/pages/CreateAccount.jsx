@@ -1,17 +1,16 @@
 import Navbar from "../components/Navbar";
-import { PhotoIcon, UserCircleIcon } from "@heroicons/react/24/solid";
 import { ChevronDownIcon } from "@heroicons/react/16/solid";
 function CreateAccount() {
   return (
-    <div>
-      <div>
+    <div className="bg-green-100 m-auto lg:w-fit">
+      <div className="py-2 shadow-green-300 shadow-2xl lg:w-[75rem] m-auto ">
         <Navbar />
       </div>
-      <div>
+      <div className="mb-10">
         <h2 className="text-3xl font-bold text-center mt-5 text-green-600">
           Create Account
         </h2>
-        <div className="lg:w-[35rem] m-auto border-0 mt-5 rounded-lg bg-lime-100 p-5 ">
+        <div className="lg:w-[35rem] md:w-[25rem] m-auto border-0 mt-5 rounded-2xl shadow-2xl shadow-amber-200 bg-lime-100 p-5 ">
           <form>
             <div className="space-y-12">
               <div className="border-b border-gray-900/10 pb-12">
@@ -76,7 +75,7 @@ function CreateAccount() {
                       />
                     </div>
                   </div>
-                  
+
                   <div className="sm:col-span-3">
                     <label
                       htmlFor="last-name"
@@ -120,7 +119,6 @@ function CreateAccount() {
                       Mobile Number
                     </label>
                     <div className="mt-2">
-                        
                       <input
                         id="last-name"
                         name="last-name"
@@ -131,9 +129,7 @@ function CreateAccount() {
                     </div>
                   </div>
                 </div>
-                
               </div>
-
             </div>
 
             <div className="mt-6 flex items-center justify-end gap-x-6">

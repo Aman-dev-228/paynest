@@ -25,6 +25,31 @@ async function CreateAccount(req,res) {
     
 }
 
+async function GetAccount(req,res) {
+
+    try {
+        const {mobileNumber} = req.body;
+        if (!mobileNumber) {
+            return res.status(400).json({message: "Mobile number is required"});
+        }
+        const user = await User.find({mobileNumber});
+        if(user.length <=0){
+            return res.status(404).json({message:"User not found"})
+        }
+        else{
+            return res.status(200).json({message: "No account details found with the given mobile number", user});
+
+        }
+        
+    } catch (error) {
+        return res.status(500).send({message: "Error while Fetching data", error})
+        
+    }
+}
+
+
+
 module.exports = {
-    CreateAccount
+    CreateAccount,
+    GetAccount
 }

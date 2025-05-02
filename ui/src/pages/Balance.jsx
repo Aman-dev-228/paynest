@@ -3,15 +3,15 @@ import Navbar from "../components/Navbar";
 function Balance() {
   return (
     <div>
-      <div>
-        <Navbar />
+      <div className="py-2 shadow-green-300 shadow-sm lg:w-[75rem] m-auto ">
+      <Navbar />
       </div>
       <div>
         <h2 className="text-3xl font-bold text-center mt-5 text-green-600">
           Check Balance
         </h2>
-        <div className="w-35[35rem] m-auto" >
-            <form className="w-[35rem] m-auto border-0 mt-5 rounded-lg bg-lime-100 p-5 ">
+        <div className="lg:w-[55rem] shadow-2xl shadow-amber-200 sm:w-[25rem] m-auto" >
+            <form className="m-auto border-0 mt-5 rounded-lg bg-lime-100 p-5 ">
             <div className="sm:col-span-2 sm:col-start-1">
                 <p className="text-sm mb-5">Enter your mobile number to view your linked account details</p>
               <label htmlFor="city" className="block text-sm  font-medium text-green-900">

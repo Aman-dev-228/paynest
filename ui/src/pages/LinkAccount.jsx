@@ -2,16 +2,16 @@ import Navbar from "../components/Navbar";
 
 function LinkAccount() {
   return (
-    <div>
-      <div>
+    <div className="bg-green-100 m-auto lg:w-fit">
+      <div className="py-2 shadow-green-300 shadow-2xl lg:w-[75rem] m-auto ">
         <Navbar />
       </div>
       <div>
         <h2 className="text-3xl font-bold text-center mt-5 text-green-600">
           Link Account
         </h2>
-        <div className="w-35[35rem] m-auto" >
-            <form className="w-[35rem] m-auto border-0 mt-5 rounded-lg bg-lime-100 p-5 ">
+        <div className="lg:w-[65rem] m-auto shadow-2xl shadow-amber-200" >
+            <form className=" m-auto border-0 mt-5 rounded-lg bg-lime-100 p-5 ">
             <div className="sm:col-span-2 sm:col-start-1">
                 <p className="text-sm mb-5">Enter your mobile number to view your linked account details</p>
               <label htmlFor="city" className="block text-sm  font-medium text-green-900">
