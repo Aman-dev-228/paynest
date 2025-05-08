@@ -2,7 +2,7 @@ import Navbar from "../components/Navbar";
 
 function Balance() {
   return (
-    <div>
+    <div className="bg-white">
       <div className="py-2 shadow-green-300 shadow-sm lg:w-[75rem] m-auto ">
       <Navbar />
       </div>
@@ -61,6 +61,18 @@ function Balance() {
             </div>
             </form>
         </div>
+      </div>
+      <div className="lg:mx-48 text-center bg-gray-50 border-0 flex flex-col lg:w-[35rem] mt-3 rounded-lg shadow-2xl shadow-black">
+        <h4 className="p-2">Balance</h4>
+        <p className="p-2"> you have ₹4243328 in your account</p>
+        <footer className=" border-t-2 mt-3  shadow-2xl shadow-amber-200 bg-gray-200">
+          <p className="m-auto text-center font-sm p-2">Happy Transaction 🥳</p>
+        </footer>
+      </div>
+      <div className="bg-orange-700 w-full flex flex-col ">
+        <footer>
+          <p className="m-auto text-center font-medium p-3">No account is linked. please enter a registered mobile number</p>
+        </footer>
       </div>
     </div>
   );

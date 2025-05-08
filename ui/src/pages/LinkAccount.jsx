@@ -2,7 +2,7 @@ import Navbar from "../components/Navbar";
 
 function LinkAccount() {
   return (
-    <div className="bg-green-100 m-auto lg:w-fit">
+    <div className="bg-white m-auto lg:w-fit">
       <div className="py-2 shadow-green-300 shadow-2xl lg:w-[75rem] m-auto ">
         <Navbar />
       </div>
@@ -61,6 +61,16 @@ function LinkAccount() {
             </div>
             </form>
         </div>
+      </div>
+      <div>
+        <p className="m-auto text-center text-lime-900 font-medium">
+          The account number is 512345678 is linked with the mobile number 9876234567
+        </p>
+      </div>
+      <div>
+        <p className="m-auto text-center text-orange-600 font-medium">
+          No account found for this number !!
+        </p>
       </div>
     </div>
   );

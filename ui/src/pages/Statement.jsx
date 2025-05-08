@@ -3,7 +3,7 @@ import Navbar from "../components/Navbar";
 
 function Statement() {
   return (
-    <div className="bg-green-100 m-auto lg:w-fit">
+    <div className="bg-white m-auto lg:w-fit">
       <div className="py-2 shadow-green-300 shadow-2xl lg:w-[75rem] m-auto ">
         <Navbar />
       </div>
@@ -48,6 +48,37 @@ function Statement() {
             </div>
             </form>
         </div>
+      </div>
+      <div>
+        <p className="m-auto text-center text-orange-600 font-medium">
+          No Transaction Details Found. please enter a valid and account linked mobile
+        </p>
+      </div>
+      <div className="lg:m-38 mt-3 border-0 lg:w-[45rem] flex p-3 rounded-lg shadow-2xl shadow-amber-200">
+        <table className="table-auto border-0 rounded-lg shadow-lime-500 shadow-2xl opacity-80  w-full">
+          <thead className="text-xl font-bold p-3 bg-lime-100">
+            <tr>
+              <td className="p-2"> Transaction data and time</td>
+              <td className="p-2"> Amount</td>
+              <td className="p-2"> Sender Account</td>
+              <td className="p-2"> Paid To</td>
+              <td className="p-2"> Receiver Account</td>
+              <td className="p-2"> Remarks</td>
+            </tr>
+          </thead>
+          <tbody className="text-md font-semibold bg-lime-200 py-3 w-full">
+            <tr>
+              <td className="p-2"> 2020-07-30T06:35:11</td>
+              <td className="p-2"> 500</td>
+              <td className="p-2"> 51234567</td>
+              <td className="p-2"> 9876543278</td>
+              <td className="p-2"> 51234234</td>
+              <td className="p-2"> Payment for Groceries</td>
+
+
+            </tr>
+          </tbody>
+        </table>
       </div>
     </div>
   );

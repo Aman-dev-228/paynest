@@ -2,7 +2,7 @@ import Navbar from "../components/Navbar";
 import { ChevronDownIcon } from "@heroicons/react/16/solid";
 function CreateAccount() {
   return (
-    <div className="bg-green-100 m-auto lg:w-fit">
+    <div className="bg-white m-auto lg:w-fit">
       <div className="py-2 shadow-green-300 shadow-2xl lg:w-[75rem] m-auto ">
         <Navbar />
       </div>
@@ -142,6 +142,16 @@ function CreateAccount() {
             </div>
           </form>
         </div>
+      </div>
+      <div className="bg-lime-400 w-full ">
+        <footer>
+          <p className="m-auto text-center font-medium p-3">Details submitted successfully !!!</p>
+        </footer>
+      </div>
+      <div className="bg-orange-700 w-full ">
+        <footer>
+          <p className="m-auto text-center font-medium p-3">form submission failed. Please correct the errors and try again</p>
+        </footer>
       </div>
     </div>
   );
